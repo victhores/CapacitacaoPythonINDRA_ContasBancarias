@@ -1,0 +1,17 @@
+criar três classes 
+                Conta (account_id, balance)
+
+                    @abstractmethod
+                    def deposito
+                    def saque
+                
+
+                ContaCorrente(Conta)(Limite)
+                    def deposito
+                    def saque (limite = saldo + cheque_especial)
+                    imprimir erro caso o valor do saque seja maior do que o limite
+
+                ContaPoupança(Conta)(taxa_de_rendimento_ao_ano)
+                    def deposito
+                    def saque
+
