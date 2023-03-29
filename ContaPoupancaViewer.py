@@ -7,15 +7,15 @@ class ContaPoupancaViewer():
         pass
 
 
-    def get_dados_do_cliente_conta_poupanca(self, id_alvo: str):
+    def visualizar_dados_do_cliente_conta_poupanca(self, id_alvo: str):
         # exibe os dados do cliente com base no seu ID
 
         for cliente in ContaPoupanca.clientes_conta_poupanca:
             if cliente["ID do cliente"] == "CP" + id_alvo:
                 print(cliente)
-        else:
-            print("[ERRO] Não há nenhum cliente de conta poupança com esse ID.")
-            # erro caso não exista cliente com o ID fornecido
+            else:
+                print("[ERRO] Não há nenhum cliente de conta poupança com esse ID.")
+                    # erro caso não exista cliente com o ID fornecido
 
 
     def visualizar_clientes_conta_poupanca(self):
