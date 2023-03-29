@@ -6,18 +6,6 @@ class ContaCorrenteViewer():
     def __init__(self):
         pass
     
-
-    def visualizar_dados_do_cliente_conta_corrente(self, id_alvo: str):
-        # exibe os dados do cliente com base no seu ID.
-
-        for cliente in ContaCorrente.clientes_conta_corrente:
-            if cliente["ID do cliente"] == "CC" + id_alvo:
-                print(cliente)
-            else:
-                print("[ERRO] Não há nenhum cliente de conta corrente com esse ID.")
-                    # erro caso não exista cliente com o ID fornecido
-        
-
     def visualizar_clientes_conta_corrente(self):
         print(ContaCorrente.clientes_conta_corrente)
             # exibe todos os cliente de conta corrente
